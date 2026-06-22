@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/dist/client/link";
 import { useRef, useState } from "react";
 
 const AUDIO_FILE = "/audio/Spiral.mp3";
@@ -172,9 +173,16 @@ export default function Home() {
       </section>
 
       <section className="flex min-h-screen flex-col items-center justify-center bg-black px-6 text-center">
-        <p className="mb-6 text-3xl font-medium tracking-wide md:text-5xl">
-          #MindMine
-        </p>
+        <Link
+          href="/research"
+          className="group mb-6 inline-flex items-center gap-3 text-3xl font-medium tracking-wide text-white transition hover:opacity-70 md:text-5xl"
+        >
+          <span>#MindMine</span>
+
+        <span className="translate-x-0 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100">
+         →
+        </span>
+        </Link>
 
         <a
           href="mailto:mindmine@aheadstudio.net"
