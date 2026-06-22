@@ -248,7 +248,7 @@ export default function ResearchPage() {
   );
 
   return (
-    <main className="min-h-screen bg-white px-6 py-20 text-[#293A5D] md:px-16">
+    <main id="top" className="min-h-screen bg-white px-6 py-20 text-[#293A5D] md:px-16" >
       <section className="mx-auto max-w-7xl">
         <Link
           href="/"
@@ -401,25 +401,41 @@ export default function ResearchPage() {
         </div>
       </section>
 
-      <section className="mx-auto mt-32 max-w-7xl">
-        <h2 className="mb-8 text-3xl font-medium md:text-5xl">
-          Project introduction
-        </h2>
+ <section className="mx-auto mt-32 max-w-7xl">
+  <div className="mb-10">
+    <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#87B0AC]">
+      Project introduction
+    </p>
 
-        <div className="overflow-hidden rounded-3xl border border-[#E7EAF0] bg-white shadow-sm">
-  <video
-    controls
-    poster="/photo/marketingcover.jpg"
-    className="aspect-video w-full object-cover"
-  >
-    <source src="/video/marketing.mp4" type="video/mp4" />
-  </video>
-</div>
-        <p className="mt-6 max-w-2xl leading-7 text-[#697E89]">
-          A short introduction to the problem we are exploring, why it matters and how MindMine is beginning to listen.
-        </p>
-      </section>
+    <h2 className="max-w-5xl text-4xl font-medium leading-tight text-[#293A5D] md:text-6xl">
+      Listening to the people behind the waiting lists.
+    </h2>
+  </div>
 
+  <div className="overflow-hidden rounded-3xl border border-[#E7EAF0] bg-white shadow-sm">
+    <video
+      controls
+      playsInline
+      preload="metadata"
+      poster="/photo/marketingcover.jpg"
+      className="aspect-video w-full"
+    >
+      <source src="/video/MindMine.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+   <div className="mt-8 grid gap-6 md:grid-cols-[0.7fr_1.3fr]">
+    <p className="text-sm uppercase tracking-[0.35em] text-[#87B0AC]">
+      Why MindMine?
+    </p>
+
+    <p className="w-full text-xl leading-9 text-[#697E89] md:text-2xl">
+      A short introduction to the problem we are exploring, why it matters and
+      how MindMine is beginning to listen.
+    </p>
+  </div>
+</section>
       <section className="mx-auto mt-32 max-w-7xl">
         <h2 className="mb-10 text-3xl font-medium md:text-5xl">
           Participate
@@ -523,6 +539,15 @@ export default function ResearchPage() {
           mindmine@aheadstudio.net
         </a>
       </section>
+      <div className="mt-16 text-center">
+  <a
+    href="#top"
+    className="text-sm uppercase tracking-[0.3em] text-[#87B0AC] transition hover:text-[#293A5D]"
+  >
+    Back to beginning ↑
+  </a>
+
+</div>
     </main>
   );
 }
