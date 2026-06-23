@@ -210,14 +210,14 @@ const questionnaires = [
 const team = [
   {
     name: "Amani Touihri",
-    role: "Software Engineer all the time, Photographer occasionally",
+    role: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/amani-touihri-a67a64179/",
     image: "/photo/ameny.png",
     
   },
   {
     name: "Burte-Ujin Gerelt-Od",
-    role: "Biomedical Engineer all the time, Popstar occasionally",
+    role: "Biomedical Engineer",
     linkedin: "https://www.linkedin.com/in/burte-ujin-gerelt-od-6a23152b0/",
     image: "/photo/burte.jpeg",
   },
